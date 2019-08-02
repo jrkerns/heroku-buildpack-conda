@@ -75,7 +75,7 @@ if [ ! -z "$ADDITIONAL_ENVIRONMENT_YML" ]; then
 fi
 
 echo "-----> Cleaning Python Environment..."
-conda clean --yes --tarballs
+conda clean --yes --all
 
 echo "-----> Copy to staging area"L
 conda_build="$build/.conda"
